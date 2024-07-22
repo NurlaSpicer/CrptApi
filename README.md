@@ -13,8 +13,26 @@ This project is a Java library for working with the Honest Sign API. The `CrptAp
 Add the following dependency to your `pom.xml`:
 
 ```xml
-<dependency>
-    <groupId>com.example</groupId>
-    <artifactId>crptapi</artifactId>
-    <version>1.0.0</version>
-</dependency>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!-- Jackson Databind dependency -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.13.3</version> <!-- Make sure to use the latest version available -->
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.13.3</version> <!-- Make sure to use the latest version available -->
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.13.3</version> <!-- Make sure to use the latest version available -->
+        </dependency>
+    </dependencies>
